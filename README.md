@@ -1,3 +1,4 @@
 # Guess The Number Game
+https://mostafa-ehab22.github.io/Guess-The-Number-Game/
 
-A modern game where user guesses randomly-generated number between 1 & 20
+Have fun and smash your High Score!
