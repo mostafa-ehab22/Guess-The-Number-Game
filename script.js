@@ -1,7 +1,7 @@
 'use strict';
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 20;
+let score = 10;
 let highscore = 0;
 
 //Display Functions
@@ -17,7 +17,7 @@ const displayScore = function (score) {
 
 const checkButton = document.querySelector('.check');
 
-//Check Button
+//Check Button Functionality
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
 
@@ -32,7 +32,7 @@ document.querySelector('.check').addEventListener('click', function () {
     displayMessage('🥳 Correct Number');
     displayNumber(secretNumber);
 
-    //Highscore
+    // Highscore
     if (score > highscore) {
       highscore = score;
       document.querySelector('.highscore').textContent = highscore;
@@ -42,26 +42,26 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
   }
-  // TOO HIGH or TOO LOW
+
+  // Game Functionality: TOO HIGH, TOO LOW or Lose
   else if (guess !== secretNumber) {
     if (score > 1) {
-      //   document.querySelector('.message').textContent =
-      //     guess > secretNumber ? '📈 Too High!!' : '📉 Too Low!!';
       displayMessage(guess > secretNumber ? '📈 Too High!!' : '📉 Too Low!!');
       score--;
       displayScore(score);
     } else {
-      displayMessage('🤦‍♂️ You Lose Nigga!!');
+      displayMessage('🤦‍♂️ You Lose!!');
       displayScore(0);
+      document.querySelector('body').style.backgroundColor = '#bc2e2e';
     }
   }
 });
 
-//Again Button
+//Again Button Functionality
 document.querySelector('.again').addEventListener('click', function () {
   displayMessage('Start guessing...');
   //Reset Values
-  score = 20;
+  score = 10;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   displayScore(score);
   displayNumber('?');
@@ -72,7 +72,7 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.number').style.width = '15rem';
 });
 
-//Check when pressing Enter
+//Check number when pressing Enter
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Enter') {
     checkButton.click();
