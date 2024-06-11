@@ -21,8 +21,6 @@ const checkButton = document.querySelector('.check');
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
 
-  console.log(guess, typeof guess);
-
   // No Guess
   if (!guess) {
     displayMessage('🚨 No Number');
