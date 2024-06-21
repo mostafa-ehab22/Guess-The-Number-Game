@@ -16,9 +16,10 @@ const displayScore = function (score) {
 };
 
 const checkButton = document.querySelector('.check');
+const againButton = document.querySelector('.again');
 
 //Check Button Functionality
-document.querySelector('.check').addEventListener('click', function () {
+checkButton.addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
 
   // No Guess
@@ -56,7 +57,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 //Again Button Functionality
-document.querySelector('.again').addEventListener('click', function () {
+againButton.addEventListener('click', function () {
   displayMessage('Start guessing...');
   //Reset Values
   score = 10;
@@ -74,5 +75,10 @@ document.querySelector('.again').addEventListener('click', function () {
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Enter') {
     checkButton.click();
+  }
+});
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'r' || e.key === 'R') {
+    againButton.click();
   }
 });
