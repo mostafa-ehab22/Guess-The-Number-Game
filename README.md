@@ -5,7 +5,6 @@ A modern, interactive game challenges you to guess a randomly-generated number b
 ## Demo:
 https://mostafa-ehab22.github.io/Guess-The-Number-Game/
 
-
 ## Features
 
 - **Interactive Gameplay:** Guess the number and receive instant feedback.
@@ -20,5 +19,10 @@ https://mostafa-ehab22.github.io/Guess-The-Number-Game/
 4. Receive feedback and hints to guide your next guess.
 5. Try to guess the correct number with the fewest attempts possible.
 6. Press __(Again button / 'R' on keyboard)__ to try again
-  
+
+## Technologies Used
+
+- **HTML:** Structure of the game.
+- **CSS:** Styling and layout.
+- **JavaScript:** Game logic and interactivity.
 
