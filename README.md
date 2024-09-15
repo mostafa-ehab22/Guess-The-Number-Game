@@ -1,9 +1,9 @@
-# Guess The Number Game
-A modern, interactive game challenges you to guess a randomly-generated number between 1 and 20. Built with HTML, CSS, and JavaScript, it offers an engaging and visually appealing user experience.
+# Guess The Number Game 🤔
+A modern, interactive game challenges you to guess a randomly-generated number between 1 and 20. Built with HTML, CSS and JavaScript, it offers an engaging and visually appealing user experience.
 
 
 ## Demo:
-https://mostafa-ehab22.github.io/Guess-The-Number-Game/
+[Experience Guess The Number Game](https://mostafa-ehab22.github.io/Guess-The-Number-Game/)
 
 ## Features
 
